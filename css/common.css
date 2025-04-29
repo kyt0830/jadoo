@@ -42,4 +42,7 @@ body{
     color : var(--tc);
 }
 
+header{
+    background : url(../images/header_bg.svg) no-repeat top right, url(../images/header_ellipse.svg) no-repeat top left;
+}
 /* link button */

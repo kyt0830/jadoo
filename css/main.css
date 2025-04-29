@@ -3,3 +3,57 @@
 
 /* 노멀라이즈 css는 언제 쓰느거야? */
 /* 노멀라이즈 css는 -> */
+
+
+header {
+    padding-top: 47px;
+    background: url(../images/header_bg.svg) no-repeat top right, url(../images/header_ellipse.svg) no-repeat top left;
+}
+
+nav h1 a {
+    display: block;
+    width: 116px;
+    height: 35px;
+    background: url(../images/Logo.svg) no-repeat;
+    text-indent: -20000px;
+    overflow: hidden;
+
+}
+
+nav>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_menu {
+    display: flex;
+    align-items: center;
+}
+
+.main_menu {
+    display: flex;
+    margin-right: 80px;
+    gap: 60px;
+}
+
+.login_menu {
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+}
+.login_menu a{
+    padding : 0 21px;
+    border : 1px solid transparent;
+    border-radius: 5px;
+    height : 40px;
+    display: block;
+    box-sizing: border-box;
+    line-height: 38px;
+}
+.login_menu a:hover{
+    border-color: #212832;
+}
+.dropdown ul {
+    display: none;
+}
