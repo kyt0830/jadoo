@@ -9,7 +9,9 @@ header {
     padding-top: 47px;
     background: url(../images/header_bg.svg) no-repeat top right, url(../images/header_ellipse.svg) no-repeat top left;
 }
-
+header nav{
+    margin-bottom: 18px;
+}
 nav h1 a {
     display: block;
     width: 116px;
@@ -66,7 +68,7 @@ nav>div {
 .hero .content{
     width : 545px;
     margin-left : 15px;
-    margin-top : 130px;
+    margin-top : 112px;
 }
 .content h3{
     font-weight: bold;
@@ -96,4 +98,48 @@ nav>div {
     position: absolute;
     background: url(../images/header_title_bg.svg) no-repeat;
     z-index: -1;
+}
+.content p{
+    line-height: 30px;
+    color : #5e6282;
+    padding-right : 70px;
+    margin-bottom: 34px;
+}
+.hero .cta{
+    display: flex;
+    gap : 44px;
+    align-items: center;
+}
+.cta a{
+    height : 60px;
+    display: flex;
+    align-items: center;
+    padding : 0 26px;
+    background-color: #f1a501;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Product Sans Medium Regular';
+    color : #fff;
+}
+.cta button{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    height : 52px;
+    font-family: "Poppins", sans-serif;
+    font-weight: medium;
+    font-size : 17px;
+    color : #686d77;
+}
+.cta button .icon{
+    width : 52px;
+    height : 52px;
+    border-radius: 50%;
+    background-color: #df6951;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 30px rgba(223,105,81,0.3);
+    color : #fff;
+    font-size: 15px;
 }
