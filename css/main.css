@@ -64,6 +64,8 @@ nav>div {
     justify-content: space-between;
 }
 .hero .content{
+    width : 545px;
+    margin-left : 15px;
     margin-top : 130px;
 }
 .content h3{
@@ -72,4 +74,15 @@ nav>div {
     line-height : 30px;
     color : #df6951;
     text-transform : uppercase;
+}
+.content h2{
+    font-family: "Volkhov", serif;
+    font-size : 84px;
+    line-height : 89px;
+    letter-spacing: -0.04em;
+    color : #181e4b;
+}
+.content h2 strong{
+    outline: 1px solid red;
+    background: url(../images/header_title_bg.svg) no-repeat;
 }
