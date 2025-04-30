@@ -181,6 +181,10 @@ nav>div {
     margin-bottom: 66px;
 }
 
+.services h3 {
+    text-transform: uppercase;
+}
+
 .services ul {
     display: flex;
     justify-content: space-between;
@@ -243,4 +247,38 @@ nav>div {
 .services ul li p {
     padding: 0 42px 44px;
 
+}
+.destination{
+    outline: 1px solid red;
+
+}
+.destination h3{
+    text-transform: capitalize;
+}
+.destination h2{
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+.destination ul{
+    width : 1040px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.destination ul li{
+    width : 315px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+}
+.destination ul li figcaption{
+    position: absolute;
+    left : 0;
+    right :0;
+    bottom: 0;
+    background-color: #fff;
+    padding : 27px 26px 42px 20px
+}
+.destination ul li figure img{
+    width : 100%;
 }
