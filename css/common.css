@@ -9,7 +9,7 @@
 /* 
     font-family: 'Product Sans Medium Regular';
     font-family: "Montserrat", sans-serif;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif; 
     font-family: "Poppins", sans-serif;
     font-family: "Volkhov", serif;
 */
@@ -43,7 +43,6 @@ body{
 }
 .section-sub-tt{
     text-align: center;
-    text-transform: uppercase;
     font-size : 18px;
     line-height : 27px;
     font-weight: 600;
