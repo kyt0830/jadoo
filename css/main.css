@@ -78,7 +78,7 @@ nav>div {
     margin-top: 112px;
 }
 
-.content h3 {
+header .content h3 {
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
@@ -87,7 +87,7 @@ nav>div {
     margin-bottom: 24px;
 }
 
-.content h2 {
+header .content h2 {
     font-family: "Volkhov", serif;
     font-size: 84px;
     line-height: 89px;
@@ -111,7 +111,7 @@ nav>div {
     z-index: -1;
 }
 
-.content p {
+header .content p {
     line-height: 30px;
     color: #5e6282;
     padding-right: 70px;
@@ -265,8 +265,8 @@ nav>div {
     width: 1040px;
     display: flex;
     justify-content: space-between;
-    margin-left : 39px;
-    padding-right : 77px;
+    margin-left: 39px;
+    padding-right: 77px;
     background: url(../images/top_destination_bg.svg) no-repeat 1005px 158px;
 }
 
@@ -291,29 +291,110 @@ nav>div {
     width: 100%;
     border-radius: 24px;
 }
-.destination ul li figure h4{
+
+.destination ul li figure h4 {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
     font-weight: 600;
-    line-height : 1.245;
+    line-height: 1.245;
     color: #5e6282;
     margin-bottom: 19px;
 }
-.destination ul li figure p{
+
+.destination ul li figure p {
     display: flex;
-    gap : 15px;
+    gap: 15px;
     align-items: center;
     font-size: 16px;
     font-weight: 600;
-    line-height : 1.245;
+    line-height: 1.245;
     color: #5e6282;
 }
 
 /* svg의 색상을 바꾸는 방법! */
-.destination ul li figure p svg{
-    color : #000;
+.destination ul li figure p svg {
+    color: #000;
 
     /* fill : 색상값 */
     /* svg의 색상값을 바꿀때 fill 속성을 사용할때도 있으니 주의* */
+}
+
+/* book a trip */
+.book_a_trip {
+    display: flex;
+    gap: 118px;
+    outline: 1px solid red;
+    background: url(../images/book_bg.svg) no-repeat right top;
+}
+
+.book_a_trip .content {
+    width: 511px;
+}
+
+.book_a_trip .section-sub-tt,
+.book_a_trip .section-tt {
+    text-align: left;
+}
+
+.book_a_trip .section-tt {
+    margin-bottom: 31px;
+}
+
+.book_a_trip ol {
+    display: flex;
+    flex-flow: column;
+    gap: 48px;
+}
+
+.book_a_trip ol li {
+    display: flex;
+    gap: 21px;
+    align-items: flex-start;
+}
+
+.book_a_trip ol li img {
+    width: 47px;
+    height: 48px;
+    padding: 13px;
+    border-radius: 13px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.book_a_trip ol li .desc {
+    width: 327px;
+}
+
+.book_a_trip ol li:nth-child(1) img {
+    background-color: #F0BB1F;
+}
+
+.book_a_trip ol li:nth-child(2) img {
+    background-color: #F15A2B;
+}
+
+.book_a_trip ol li:nth-child(3) img {
+    background-color: #006380;
+}
+
+.book_a_trip ol li .desc h3 {
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+.pic_of_month {
+    margin-top: 78px;
+
+    outline: 1px solid red;
+
+}
+
+.pic_of_month .details {
+    padding: 20px 24px 30px;
+    width: 370px;
+    outline: 1px solid red;
+    background-color: #fff;
+    box-sizing: border-box;
 }
