@@ -6,14 +6,21 @@ const book_a_trip_height = book_a_trip.offsetHeight;
 const ongoing_persent = document.querySelector('.ongoing .persent');
 const ongoing_bar = document.querySelector('.ongoing .bar');
 window.addEventListener("scroll", function () {
-  if (window.scrollY > book_a_trip_OST - 300) {
-    book_a_trip.classList.add("active");
-    startNumberAnimation();
-  } else {
-    book_a_trip.classList.remove("active");
-    stopNumberAnimation();
-  }
+    if (window.scrollY > book_a_trip_OST - 300) {
+        if (!book_a_trip.classList.contains("active")) {
+            book_a_trip.classList.add("active");
+            startNumberAnimation();
+        }
+    }
+    // else {
+    //     if (book_a_trip.classList.contains("active") == true) {
+    //         book_a_trip.classList.remove("active");
+    //         stopNumberAnimation();
+    //     }
+    // }
 });
+
+
 function startNumberAnimation() {
     let start = 0;
     let end = Number(ongoing_bar.getAttribute("data-rate"));
@@ -24,6 +31,6 @@ function startNumberAnimation() {
             ongoing_bar.style.width = start + "%";
         } else {
             clearInterval(this);
-        } 
+        }
     }, 100);
 }
